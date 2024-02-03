@@ -1,0 +1,366 @@
+﻿BLOCKS
+BlockHatena - ? Block
+ObjectClarity - Invisible ? Block
+BlockHatenaLong - Long ? Block
+BlockRenga - Brick Block
+BlockRoundLight - Eyed Block
+BlockRoundLongLight - Long Eyed Block
+BlockRoundLong6x1 - Longer Eyed Block
+BlockRoundLong9x1 - Very Long Eyed Block
+BlockMarioBros - Wavy Stone Block 
+BlueBlock - Square Block
+ObjectBlockRaceStart - Race Block
+ObjectBlockClarityCharacter - Character Specific Block
+BlockCloudLight - Cloud Block
+BlockCloudLightLong - Long Cloud Block
+ObjectBlockSupriseYellow - ! Block
+ObjectXylophoneBridge - Colored Note Blocks
+ObjectBlockRouletteSlow - Roulette Block
+ObjectBlockHardBreakable - Hard Block
+MapObjCommonColorBox1x1m - Red Block
+MapObjCommonColorBox2x2m - Large Red Block
+ObjectTimerSwitchBlockSync - Timer Block
+ObjectBlockHardBreakableStone - Hard Stone Block
+ObjectWonderBlock - Blue Star Block
+ObjectBlockHardBreakableSugar - Sugar Block 
+ObjectBlockHardToride - Smb3 Styled Castle Block
+ObjectWonderSnow - Snow Block
+ObjectBlockShoot - Shooting Block
+
+
+
+
+SEMISOLIDS 
+MapObjSavannaAshibaE - Savannah Semisolid
+MapObjSavannaFallAshibaA - Savannah Tree 
+MapObjSavannaFallAshibaB - Savannah Tree 2 
+MapObjScaffordingPerHalfFountian - Fountian Top
+MapObjHajimariSougenAshibaC1 - Fountian Bottom 
+MapObjHajimariSougenAshibaB - Overworld Tree 
+MapObjHajimariSougenAshibaB - Overworld Tree 2 
+MapObjSakaAshiba30A - Yellow Semisolid
+MapObjSakaAshibaBottomA - Bottom Support for Yellow Semisolid
+ObjectCycad - Small Palm Tree 
+ObjectPalmeras - Palm Tree
+ObjectObjCommonSenkanBossAshibaA - Bowser Semisolid
+MapObjYamaTijyoAshibaC02 - Snow Wood Platform
+MapObjYamaTijyoAshibaC01 - Small Snow Wood Platform
+MapObjYamaJyokuAshibaA00 - Pink Cloud Platform 
+MapObjYamaJyokuAshibaA01 - Small Pink Cloud Platform
+
+
+
+
+
+
+OBJECTS 
+ObjectCoinYellow - Coin
+ObjectTukaCoinOnGround - Coins Invisable 
+ObjectCoinRandom - Random Coins
+ObjectDropLuckyCoin - Purple Coins 
+ObjectMiniLuckyCoin - Mini Purple Coins
+ObjectBigTenLuckyCoin - Ten Coins
+ObjectCoinBlue - Blue Coin
+ObjectWonderUpDownDokan - Up Pipe
+ObjectDokan - Pipes
+ObjectTalkingFlower - Talking Flower
+RetryPoint - Checkpoint Flag 
+ObjectMiniFlowerAir - Blue Tips 
+ObjectNextWormDokan - WonderFlower Worm Pipe
+ObjectForegroundUpWormDokan - Up Pipe Worm
+ObjectGoalPole - Goal Pole 
+EventItemWonderFlowerGoalDemo - Goal Pole Wonder Seed
+ItemWonderFinishWonderSeed - Wonder Flower Wonder Seed
+ObjectTalkingFlowerFive - Row of Talking Flowers 
+ObjectYajirushiOnGround - Arrow Pole 
+ObjectPropellerFlowerForCourse - Course Navi
+ObjectDokanJoint - Pine Joint
+ObjectDokanMiddle - Pipe Connector
+ObjectAvocadoBlock2x2 - Yellow Honey Block 
+ObjectAvocadoBlock4x4 - Large Yellow Honey Block  
+ObjectGoalPoleFort - Goal Pole House
+ObjectStaticNeedleThornOneDirection - Spikesup
+ObjectMiniFlowerInBlock - Spawns from Block 
+ObjectSwitchP - P Switch
+ObjectPullingString - String 
+ObjectHatenaCapsule - Contains Powerup Ballon
+ItemWonderChip - Wonder Token 
+ObjectLiftTrampoline - Orange Mushroom Platform
+ObjectBadgeSignBoard - Badge Sign
+ObjectDashFloorBlue - Dash Blue
+ObjectBlockDotLineWithTimerBlixk - Synced Uo Blocks  
+ObjectLiftNormal - Lift Platform
+ObjectStaticNeedleAllDirectionColor - Spike Blocks
+ObjectBoxWood2X2 - 2x2 Crate
+ObjectBoxWood4x2 - 4x2 Crate
+ObjectBoxWood4x4 - 4x4 Crate
+ItemWonderHole - Wonder Flower Aura 
+ObjectWormDokan - Wormy Pipe 
+ObjectFluidEffectsLineCheckerTag - Water from pipe? Or link for the swamp level? 
+ItemWonderFinishWonderSeed - Wonder Flower Wonder Seed 
+MapObjCommonColorBox - Red Checkered Box
+MapObjSakaAshiba30A_6m - Orange/Red Platform 
+ObjectMiniFlowerApproach - Blue Tips Approach 
+ObjectBlockPowRed - POW Block
+ObjectStaticNeedleRockOneDirection - Spike Up
+PopUpTag - makes items pop out of pipes and such
+ObjectYajirushi - Arrow No Stand
+SoundRhythmCoinHodaiRight - Bullet Bill Bonus
+ObjectThrowDownRopeKoopaJr - Rope
+ObjectMiniFlowerInBlock - Blue Tips Activated When Block Hit
+ObjectIvyFixed - Vine
+ObjectStaticLiftTrampoline - Bouncy Platform
+ObjectGoKun - Cloud Platform 
+ObjectBlockEndurace2x4 - 2x4 Crystal 
+ObjectBlockEndurance4x4 - 4x4 Crystal
+ObjectBlockEndurace - 2x2 Crystal
+ObjectLiftNormal - Platform 
+ObjectPullingString - Pulling String 
+ObjectBlockHardBreakableStoneBig - Large Stone Block
+ObjectKillerHodaiLeftTop - Blaster
+ObjectBurner - Burner
+ObjextPendulumBurner - Burner Stand
+ObjectIronBox2x2 - Bowser Box 2x2
+ObjectBeltConveyor - Airship Conveyor
+ObjectSwitchEnemyPlant - Bowser Airship Switch
+ObjectBlockPushIce - Pushed Ice
+ObjectBlockPushIce4x4 - Pushed Ice 4x4 
+IcePopUpSmall - Ice Generator Small
+IcePopUp - Ice Generator 4x4
+ObjectHouHouNest - Nest for HouHou
+ObjectBalloonWall - 4x4 Bumby Wall
+ObjectBlockPole - Pole
+ObjectSinkBlock - Sinking Platform
+ObjectSoundBlinkBlock - Blinking Block
+ObjectAshibaDisappearStep - Counting Block
+ObjectAddionalBlockToObjectBlockLift - Green Lift Block 
+ObjectAddionalBlockWonder5x3 - 5x3 Green Lift Block
+ObjectAddionalBlockWonder3x3 - 3x3 Green Lift Block
+ObjectAddionalBlockWonder3x5 - 3x5 Green Lift Block
+ObjectAddionalBlockWonder2x7 - 2x7 Green Lift Block
+ObjectAddionalBlockWonder1x9 - 1x9 Green Lift Block
+
+
+ENEMIES 
+EnemyKuribo - Goomba
+EnemyRunRunPackun - Running Piranha Plant 
+EnemyDirectPutRunRujPackun - Piranha Plant 
+EnemyUzaPiyo - Skcaddalers 
+EnemyNokonokoRed - Red Koopa
+EnemyTossin - Bulrush
+EnemySnail - Snail  
+EnemyErin - Tall Mushroom 
+EnemyMokumokumo - Smogrin ( smoke guy ) 
+EnemyKoropon - Hoppo
+EnemyKakibo - Goombrat
+EnemyPackun - Piranha Plant
+EnemyNokonokoSkate - Skating Koopas
+EnemyBigSnail - Big Snail
+EnemyOsukun - Shova
+EnemySnailShell - Snail Shell
+EnemyGabon - Spike
+EnemyGabonPinata - Spike Ball
+EnemyRhythmGabon - Wonder Flower Spike
+EnemyBiyon - Sproing 
+EnemyBoneKuribo - Bone Kuribo
+EnemyBrosHammer - Hammer Bro
+EnemyKaron - Dry Bone
+BossKoopaJr - Bowser Jr
+EnemyPukupuku - Cheep Cheep
+EnemyHaiden - Smackerel
+EnemyOctopusFoot - Centipede Fish
+EnemyUnira - Urchin 
+EnemyKawasemi2 - Robbird
+EnemyBlowgunhei - BlewBird
+EnemyNokonokoSea - Sea Turtle
+EnemyTogezo - Spiny 
+Enemy Patagon - I forgor ( Downwards Twomp ? ) 
+EnemyEaterSingle - Gnewsher
+EnemyAnguri - Maw-Maw
+EnemyBlackPackunLight - Black Nipper
+EnemyPuchiPackun - Nipper Plant 
+EnemyMechaKoopa - MechaKoopa
+EnemyJugemuCloud - Cloud Ridable
+EnemyZundoko - Outmaway
+EnemyHebimushi - Pokipedi
+EnemyHouHou - Swooping Owl
+EnemyMeriConder - Condart
+EnemyIronBall - Iron Spiked Ball
+EnemyDirectPutWatermelonPackun - Watermelon Pirannah Plant
+EnemyJugemu - Lakitu 
+EnemyEletricBubble - Sparky
+EnemyHacondor - Bird that drops items
+
+
+DECORATIONS
+OVERWORLD DECO
+DVHajimariSougenMiddleKarikomiA - FlowerBed Large Statue 
+MapObjHajiMariSougenKazariJimenHanaC00 - 2 Flower Bush 
+MapObjHajimariSougenKazariJimenKusa - Grass
+MapObjHajimariSougenKazariKadanA00 - Potted Flower Bed 
+MapObjHajimariSougenKazariJimenKusa1 - Small Grass
+MapObjHajimariSougenKazariObiA00 - Ground Decroation 
+MapObjHajimariSougenKazariObiA01 - Ground Decroation 2 
+MapObjHajimariSougenAshibaAMae - Overworld Tree Top
+MapObjHajimariSougenKazariJimenSakuA - Fence 
+MapObjHajimariSougenKazariJimenHanaC01 - Three Flower Bush
+MapObjHajimariSougenKazariJimenSigemiBO2 - Dirt
+MapObjHajimariSougenKazariDokanA01 - Small Hills
+MapObjHajimariSougenKazariJimenHaraA01 - Flower Bush
+MapObjHajimariSougenKazariJimenHaraB01 - Small Flower Bush
+MapObjHajimariSougenKazariJimenNemotoB - Small Hill
+MapObjHajimariSougenKazariJimenNeA00 - Branch
+DVHajimariSougenMiddleKiA - Tree Trunk
+MapObjHajimariSougenKazariJimenNeA01 - Branch 2
+MapObjHajimariSougenKazariJimenSigemi - Big Flower Bush
+
+
+FOREST DECO
+MapObjHajimariSougenKazariKokeA01 - Green Vines
+MapObjHajimariMoriKazariJimenKusaA00 - White Flowers
+MapObjHajimariMoriKazariObiA00 - Ground Decroation 3 
+DVHajimariMoriMiddleKiA - Large Tree
+MapObjHajimariMoriSigemiC - Large Bushes
+MapObjHajimariMoriKazariDokanA00 - Small Hill 2 
+MapObjHajimariMoriKazariObiA01 - Ground Decroation 4 
+MapObjHajimariSougenKazariJimenHanaA - Flower Bush 2
+MapObjHajimariSougenKazariJimenHanaB - Small Flower Bush 2 
+MapObjHajimariSougenKazariDokanA02 - Pipe Decor 
+MapObjSavannaKazariJimenKinomiA01 - 3 Nuts
+MapObjSavannaKazariJimenKinomiA00 - 2 Nuts
+
+
+SAVANNAH DECO
+MapObjSavannaKazariJimenKusaA02 - Savanna Bush
+MapObjSavannaKazariJimenKusaA01 - Savanna Bush 2 
+MapObjSavannaKazariObiA00 - Ground Decoration 5 
+DVSavannaMiddleSekibanAA - Large Stone Statue
+MapObjSavannaKazariObiA01 - Ground Decoration 6
+MapObjSavannaKazariKabelshi00 - Rock
+MapObjSavannaKazariKabelshi01 - Rocks 
+MapObjSavannaAshibaBMae - Savanna Tree Top
+MapObjSavannaAshibaAMae - Large Savanna Tree Top
+MapObjSavannaKazariJimenKusaA00 - Savanna Pickle Bush
+MapObjSavannaKazariJimenKusaB01 - Wide Savanna Bush
+MapObjSavannaKazariJimenKusaC00 - Savanna Flower Bush
+DVSavannahFarHikariA - Small Savannah Flower 
+DVSavannaSabukuMiddleKiB - Tall Pink Tree
+DVSavannahSabukuMiddleKiA - Middle Pink Tree
+MapObjSavannaSabakuKazariJimenIwa00 - Large Rocks
+MapObjSavannaSabakuKazariIwaB00 - Large Wide Rocks
+MapObjSavannaSabakuKazariKusaA - Savannah Grass
+MapObjSavannaSabakuKazariObiA00 - Ground Decoration 7
+MapObjSavvanaSabakuKazariObiKusaA - Grass Savanna
+
+
+SWAMP DECO
+MapObjSavannaChiteiKazariJimenB01 - Swamp 2 Bush
+MapObjSavannaChiteiKazariObiA00 - Ground Decoration 8
+MapObjSavannaChiteiKazariJimenB00 - Swamp Single Bush
+MapObjSavannaChiteiKazariJimenA00 - Wide Bush
+MapObjSavannaChiteiKazariJimenA01 - Small Bush
+
+
+BADGE DECO
+MapObjCommonBadgeKazariB - Badge Decoration 
+ObjectCommonBadgeStart - Large Badge Decoration 
+MapObjRaceSaku00 - Fence
+
+
+CLOUD DECO
+MapObjCommonJoukuAKazariJimenKusaA01 - Cloud Flower Bush
+MapObjCommonJoukuAKazariJimenKumoA00 - Cloud Bush
+MapObjCommonJoukuAKazariJimenKusaA00 - Cloud Large Flower Bush
+
+
+BONUS DECO
+DVCommonBonusCoinFarCoinA - Bonus Coin 
+DVCommonBonusCoinFarCoinB - Bonus Coin Small
+MapObjCommonBonusCoinKazariJimenA03 - Slope Bonus
+MapObjCommonBonusCoinSlopeAshibaA03 - Stair Bonus
+MapObjCommonBonusCoinSlopeAshibaA02 - Small Stair Bonus
+MapObjCommonBonusCoinKazariJimenA02 - Small Slope Bonus
+MapObjCommonBonusCoinAshibaB - Bonus Wall
+MapObjCommonBonusCoinAshibaA - Bonus Ground
+
+
+CASTLE DECO
+MapObjCommonTorideKazariHanaB00 - Tentacle Small
+MapObjCommonTorideKazariHanaA - Tentacle Large
+DVCommonTorideMiddleJimenKiwa - Brick Wall
+ObjectPalaceBossDoor - Bowser Door
+KoopaJr04ScaleFlotor - Boss Floor
+RichDVBossKoopaJr04TorideKemuri - Smoke 
+
+
+OCEAN DECO
+MapObjCommonUmiAsaseKazariJimenKusaA - Ocean Seweed Large
+MapObjCommonUmiAsaseKazariSangoA - Blobs and Seaweed
+MapObjCommonUmiAsaseKazariC - Wide Blob
+MapObjCommonUmiAsaseKazariD - Small Blob
+MapObjCommonUmiAsaseKazariE - Tiny Blob
+MapObjCommonUmiAsaseKazariJimenKusaB00 - Side Bush
+MapObjCommonUmiAsaseKazariJimenKusaB01 - Small Side Bush
+MapObjCommonUmiAsaseKazariJimenKusaC01 - Tiny Side Bush
+MapObjCommonUmiAsaseKazariJimenKusaC00 - Long Side Bush
+WaterUpHole - Blaster 
+MapObjCommonUmiAsaseKaiteiKusaC - Large Yellow Kelp
+MapObjCommonUmiAsaseKaiteiKusaB - Long Yellow Kelp
+
+
+BEACH DECO
+MapObjHajimariKaiganKazariD - Small Sand Hill
+MapObjHajimariKaiganKazariB - Wide Sand Hill
+MapObjHajimariKaiganKazariA - Beach Bush
+
+
+UNDERGROUND DECO 
+MapObjHajimariChikaKazariJimenHousekiA - Small Purple Hill
+MapObjHajimariChikaKazariJimenHouseki - Large Purple Hill
+MapObjHajimariChikaKazariJimenIwaA - Wide Rocks
+MapObjHajimariChikaKazariJimenIwaA - Small Rocks
+
+
+HONEY DECO
+MapObjMushiChikaKazariA - Honey Small
+MapObjMushiChikaKazariB - Honey Big
+MapObjMushiChikaKazariD - Honey Hills
+
+
+CANDY DECO
+MapObjMushiMachiKazariA - Flowers
+MapObjMushiMachiKazariC - Marshmellows
+MapObjMushiMachiKazariB - Fence
+MapObjMushiMachiKazariObiA - Ground Decoration 9 
+ObjectGrassShade - Candy Tree
+MapObjMushiMachiKazariJimenIshiA02 - Black Candy Large 
+MapObjMushiMachiKazariB - Candy Blob Wide
+MapObjMushiMachiKazariD - Candy Blob
+
+
+SNOW DECO 
+MapObjYamaTijyoKazariB00 - Large Ice Hills
+MapObjYamaTijyoKazariB01 - Small Ice Hills
+MapObjYamaTijyoKazariC01 - Snow Pillars Small
+MapObjYamaTijyoKazariC02 - Snow Pillars Big
+MapObjYamaTijyoKazariC00 - Snow Pillars Tiny
+MapObjYamaTijyoAshibaE00 - Large Fence Middle 
+MapObjYamaTijyoAshibaE01 - Large Fence Side 1
+MapObjYamaTijyoAshibaE01 - Large Fence Side 2
+MapObjYamaTijyoYukidamaYukidarumaA - Large Snowman
+MapObjYamaTijyoYukidamaKamakuraA - Igloo
+Map
+MapObjYamaTijyoKazariA02 - Large Snow Cake
+MapObjYamaTijyoKazariA00 - Small Snow Cake
+MapObjYamaTijyoKazari01 - Large Snow Blobs
+MapObjYamaTijyoKazari00 - Small Snow Blobs
+MapObjYamaTijyoKazariA02 - Small Crystal Hills
+MapObjYamaTijyoKazariA01 - Large Crystal Hills
+MapObjYamaTijyoKazariA00 - Tiny Crystal Hills
+MapObjYamaJyokuKazariJimenKumo02 - Large Dark Cloud 
+MapObjYamaJyokuKazariJimenKumo01 - Small Dark Cloud
+MapObjYamaJyokuKazariJimenKumo00 - Medium Dark Cloud
+MapObjYamaJyokuKazariObiA - Ground Decoration 10 
+
+
+BACKGROUND/FOREGROUND ELEMENTS
