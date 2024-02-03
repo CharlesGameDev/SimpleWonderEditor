@@ -23,9 +23,13 @@ namespace SimpleWonderEditor
 
         static void Main(string[] args)
         {
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+            string version = fvi.FileVersion;
+
             Print("init window");
             VeldridStartup.CreateWindowAndGraphicsDevice(
-                new WindowCreateInfo(0, 0, 1280, 720, WindowState.Maximized, "Simple Wonder Editor"),
+                new WindowCreateInfo(0, 0, 1280, 720, WindowState.Maximized, $"Simple Wonder Editor v{version}"),
                 new GraphicsDeviceOptions(true, null, false, ResourceBindingModel.Improved, true, true),
                 out _window,
                 out _gd);
@@ -55,6 +59,7 @@ namespace SimpleWonderEditor
                 _cl.Begin();
                 _cl.SetFramebuffer(_gd.MainSwapchain.Framebuffer);
                 _cl.ClearColorTarget(0, new RgbaFloat(_clearColor.X, _clearColor.Y, _clearColor.Z, 1f));
+
                 _controller.Render(_gd, _cl);
                 _cl.End();
                 _gd.SubmitCommands(_cl);
