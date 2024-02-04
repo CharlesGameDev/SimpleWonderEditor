@@ -1,72 +1,56 @@
 ﻿using ImGuiNET;
 using System.Diagnostics;
-using System.Numerics;
 using System.Reflection;
-using Veldrid;
-using Veldrid.Sdl2;
-using Veldrid.StartupUtilities;
+using static SDL2.SDL;
+using static SDL2.SDL.SDL_EventType;
+using ImGuiGeneral;
+using SimpleWonderEditor.Editors;
 
 namespace SimpleWonderEditor
 {
     class Program
     {
-        private static Sdl2Window _window;
-        private static GraphicsDevice _gd;
-        private static CommandList _cl;
-        private static ImGuiController _controller;
-
-        private static bool _showActorWindow = true;
-
-        private static Assembly assembly = Assembly.GetExecutingAssembly();
-
-        private static Vector3 _clearColor = new Vector3(0.45f, 0.55f, 0.6f);
+        private static Config config;
+        static IntPtr _window;
+        static IntPtr _glContext;
 
         static void Main(string[] args)
         {
-            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+            config = Config.LoadFromFile();
+
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
             string version = fvi.FileVersion;
 
-            Print("init window");
-            VeldridStartup.CreateWindowAndGraphicsDevice(
-                new WindowCreateInfo(0, 0, 1280, 720, WindowState.Maximized, $"Simple Wonder Editor v{version}"),
-                new GraphicsDeviceOptions(true, null, false, ResourceBindingModel.Improved, true, true),
-                out _window,
-                out _gd);
-            _window.Resized += () =>
-            {
-                _gd.MainSwapchain.Resize((uint)_window.Width, (uint)_window.Height);
-                _controller.WindowResized(_window.Width, _window.Height);
-            };
-            _cl = _gd.ResourceFactory.CreateCommandList();
-            Print("init imGui");
-            _controller = new ImGuiController(_gd, _gd.MainSwapchain.Framebuffer.OutputDescription, _window.Width, _window.Height);
+            Print("init SDL2 and OpenGL");
+            (_window, _glContext) = ImGuiGL.CreateWindowAndGLContext($"Simple Wonder Editor v{version}", 1280, 720, maximized: true);
+
+            LevelViewport.Initialize(_window, _glContext);
+
+            MSBTEditor.Open();
 
             Print("main loop");
-            var stopwatch = Stopwatch.StartNew();
-            float deltaTime = 0f;
-            // Main application loop
-            while (_window.Exists)
+            bool quit = false;
+            while (!quit)
             {
-                deltaTime = stopwatch.ElapsedTicks / (float)Stopwatch.Frequency;
-                stopwatch.Restart();
-                InputSnapshot snapshot = _window.PumpEvents();
-                if (!_window.Exists) { break; }
-                _controller.Update(deltaTime, snapshot); // Feed the input events to our ImGui controller, which passes them through to ImGui.
+                while (SDL_PollEvent(out SDL_Event e) != 0)
+                {
+                    switch (e.type)
+                    {
+                        case SDL_QUIT:
+                            quit = true;
+                            break;
+                    }
+                    LevelViewport.Renderer.ProcessEvent(e);
+                }
 
+                LevelViewport.BeginDraw();
                 SubmitUI();
-
-                _cl.Begin();
-                _cl.SetFramebuffer(_gd.MainSwapchain.Framebuffer);
-                _cl.ClearColorTarget(0, new RgbaFloat(_clearColor.X, _clearColor.Y, _clearColor.Z, 1f));
-
-                _controller.Render(_gd, _cl);
-                _cl.End();
-                _gd.SubmitCommands(_cl);
-                _gd.SwapBuffers(_gd.MainSwapchain);
+                LevelViewport.EndDraw(_window);
             }
 
             Print("exiting");
+            LevelViewport.Close();
             // Clean up Veldrid resources
             Exit();
         }
@@ -78,10 +62,10 @@ namespace SimpleWonderEditor
 
         static void Exit()
         {
-            _gd.WaitForIdle();
-            _controller.Dispose();
-            _cl.Dispose();
-            _gd.Dispose();
+            SDL_GL_DeleteContext(_glContext);
+            SDL_DestroyWindow(_window);
+            SDL_Quit();
+            config.SaveToFile();
             Environment.Exit(0);
         }
 
@@ -120,15 +104,26 @@ namespace SimpleWonderEditor
 
             if (ImGui.BeginMenu("Window"))
             {
-                ImGui.Checkbox("Actors", ref _showActorWindow);
+                ImGui.Checkbox("Actors", ref config.showActorWindow);
 
+                ImGui.EndMenu();
+            }
+
+            if (ImGui.BeginMenu("Tools"))
+            {
+                if (ImGui.MenuItem("MSBT Editor"))
+                    MSBTEditor.Open();
+                ImGui.MenuItem("Area Param Editor", false);
+                ImGui.MenuItem("Music Editor", false);
+                ImGui.MenuItem("World Map Editor", false);
                 ImGui.EndMenu();
             }
 
             ImGui.EndMainMenuBar();
 
-            if (_showActorWindow)
+            if (config.showActorWindow)
                 ActorsWindow.DrawGUI();
+            MSBTEditor.Draw();
         }
 
         private static void OpenFile(string path)
